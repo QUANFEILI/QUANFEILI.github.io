@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quanfei Li's Qualified Lion | ITIS 3135 | Tables</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #4a90e2;
+            color: #333;
+            font-family: Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: #333;
+            color: Lightblue;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav a {
+            color: Lightblue;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: darkgray;
+        }
+        tr:nth-child(even) {
+            background-color: lightgray;
+        }
+        tr:nth-child(odd) {
+            background-color: white;
+        }
+        ol {
+        list-style-position: inside; 
+        padding-left: 0; 
+        text-align: left; 
+        display: inline-block;
+        }
+
+        footer {
+            background-color: #222;
+            color: Lightblue;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+        footer nav a {
+            color: Lightblue;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        footer p {
+            margin: 10px 0;
+        }
+        footer small {
+            color: #bbb;
+        }
+    </style>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>Tables Assignment</h2>
+
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>Qualified Lion - qlion@qualifiedlion.co - 99</li>
+            <li>D.I. von Briesen - dvonbri1@uncc.edu - 1</li>
+            <li>Max Lol - maxlol@qualifiedlion.co - 5</li>
+            <li>Dickson Prince - dickson@gmail.com - 20</li>
+            <li>John Wang - john.wang@yahoo.com - 3</li>
+            <li>Bro Wayne - bro@gmail.com - 25</li>
+            <li>Caonima Kent - caonima.kent@supermail.com - 18</li>
+        </ol>
+
+        <h3>Employee Data in Simple Table</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+            </tr>
+            <tr>
+                <td>Qualified Lion</td>
+                <td>qlion@qualifiedlion.co</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>D.I. von Briesen</td>
+                <td>dvonbri1@uncc.edu</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Max Lol</td>
+                <td>maxlol@qualifiedlion.co</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Diana Prince</td>
+                <td>diana@gmail.com</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>John Wang</td>
+                <td>john.wang@yahoo.com</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Bro Wayne</td>
+                <td>bro@gmail.com</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Caonima Kent</td>
+                <td>caonima.kent@supermail.com</td>
+                <td>18</td>
+            </tr>
+        </table>
+
+        <h3>Employee Data in Complex Table</h3>
+        <figure>
+            <figcaption>Employee Information</figcaption>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                    <th>Monthly Salary</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Management</td>
+                    <td>Qualified Lion</td>
+                    <td>qlion@qualifiedlion.co</td>
+                    <td>99</td>
+                    <td>$99,000</td>
+                </tr>
+                <tr>
+                    <td>D.I. von Briesen</td>
+                    <td>dvonbri1@uncc.edu</td>
+                    <td>1</td>
+                    <td>$1,000</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Operations</td>
+                    <td>Max Lol</td>
+                    <td>maxlol@qualifiedlion.co</td>
+                    <td>5</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td>Diana Prince</td>
+                    <td>diana@gmail.com</td>
+                    <td>20</td>
+                    <td>$20,000</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Support</td>
+                    <td>John Wang</td>
+                    <td>john.wang@yahoo.com</td>
+                    <td>3</td>
+                    <td>$3,000</td>
+                </tr>
+                <tr>
+                    <td>Bro Wayne</td>
+                    <td>bro@gmail.com</td>
+                    <td>25</td>
+                    <td>$25,000</td>
+                </tr>
+                <tr>
+                    <td>Sales</td>
+                    <td>Caonima Kent</td>
+                    <td>caonima.kent@supermail.com</td>
+                    <td>18</td>
+                    <td>$18,000</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Total Years of Service</th>
+                    <td>267</td> 
+                    <td>$171,000</td>
+                </tr>
+            </table>
+        </figure>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

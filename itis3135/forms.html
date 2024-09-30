@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quanfei Li's Qualified Lion | ITIS 3135 Forms</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #4a90e2;
+            color: #333;
+            font-family: Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: #333;
+            color: Lightblue;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav a {
+            color: Lightblue;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #222;
+            color: Lightblue;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+        footer nav a {
+            color: Lightblue;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        footer p {
+            margin: 10px 0;
+        }
+        footer small {
+            color: #bbb;
+        }
+        form {
+            margin-top: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="tel"], input[type="email"], select {
+            width: 100%;
+            padding: auto;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 5px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>Qualified Lion's Business Form</h2>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label>Preferred Contact Method:</label>
+            <input type="checkbox" id="contact-email" name="contact-method" value="email">
+            <label for="contact-email" style="display:inline;">Email</label>
+            <input type="checkbox" id="contact-phone" name="contact-method" value="phone">
+            <label for="contact-phone" style="display:inline;">Phone</label>
+
+            <label>Product Interest:</label>
+            <input type="radio" id="crafts" name="product" value="crafts" required>
+            <label for="crafts" style="display:inline;">Crafts</label>
+            <input type="radio" id="services" name="product" value="services">
+            <label for="services" style="display:inline;">Services</label>
+
+            <label for="package">Select a Package:</label>
+            <select id="package" name="package" required>
+                <option value="">Select a package</option>
+                <option value="basic">Basic</option>
+                <option value="premium">Premium</option>
+                <option value="vip">VIP</option>
+            </select>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
