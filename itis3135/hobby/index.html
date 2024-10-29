@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quanfei's Cooking Adventures</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #F9F5EB;
+            color: #5D3A3A;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+    
+        header {
+            background-color: #D15B24;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: larger;
+        }
+    
+        footer {
+            background-color: #BF4B1D;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: larger;
+            margin-top: auto;
+        }
+    
+        main, footer {
+            width: 95%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    
+        main img {
+            width: 400px;
+            height: 500px;
+        }
+    
+        .who-img {
+            width: 700px;
+            height: 500px;
+        }
+    
+        nav {
+            font-size: larger;
+            border: none;
+            height: auto;
+            padding: 10px 0;
+        }
+    
+        nav > ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-inline-start: 0;
+            margin-block: 0;
+        }
+    
+        nav > ul > li {
+            display: block;
+        }
+    
+        a {
+            text-decoration: none;
+            color: #F9F5EB;
+        }
+    
+        a:visited {
+            color: #F9F5EB;
+        }
+    
+        a:hover {
+            text-decoration: underline;
+            color: #FFFFFF;
+        }
+    
+        footer nav ul {
+            justify-content: center;
+        }
+    
+        footer p {
+            margin: 10px 0 0;
+        }
+    
+        footer img {
+            width: 100px;
+        }
+    
+        section {
+            display: none;
+            border: 1px solid #D15B24;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+        }
+    
+        main ul {
+            list-style-position: inside;
+            text-align: left;
+            margin: auto 0;
+        }
+    
+        figcaption {
+            font-style: italic;
+        }
+    
+        .location-list {
+            list-style-type: none;
+            padding: 0;
+        }
+    
+        .location-list li {
+            margin-bottom: 15px;
+        }
+    
+        .location-title {
+            font-size: 1.2em;
+            color: #5D3A3A;
+            font-weight: bold;
+        }
+    
+        .why-cooking-list {
+            list-style-type: none;
+            padding: 0;
+        }
+    
+        .why-cooking-list li {
+            margin-bottom: 15px;
+        }
+    
+        .why-cooking-list strong {
+            font-size: 1.1em;
+            color: #5D3A3A;
+            font-weight: bold;
+        }
+    
+        .season-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20px;
+        }
+    
+        .season-item {
+            background-color: #FFFFFF;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(48% - 10px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+        }
+    
+        .season-title {
+            font-size: 1.2em;
+            color: #5D3A3A;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    
+        .seasonal-img {
+            max-width: 80%;
+            max-height: 300px;
+            height: auto;
+            margin: 10px auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+    
+        @media (max-width: 768px) {
+            .season-item {
+                flex: 1 1 100%;
+            }
+        }
+    
+        #why figure {
+            text-align: center;
+            margin: 0 auto;
+        }
+    
+        #why img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        #why figcaption {
+            font-size: 0.9em;
+            color: #555;
+            text-align: center;
+            margin-top: 5px;
+        }
+    
+        table {
+            margin: auto;
+            text-align: left;
+            border-collapse: collapse;
+            border-spacing: 10px;
+            width: 100%;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Cooking Adventures: Recipes and More!</h1>
+        <nav>
+            <ul>
+                <li><a href="#what">Home</a></li>
+                <li>||</li>
+                <li><a href="#who">About Me</a></li>
+                <li>||</li>
+                <li><a href="#when">Best Times</a></li>
+                <li>||</li>
+                <li><a href="#where">Best Locations to Cook</a></li>
+                <li>||</li>
+                <li><a href="#how">Cooking Techniques</a></li>
+                <li>||</li>
+                <li><a href="#why">Why Cooking?</a></li>
+                <li>||</li>
+                <li><a href="#ai">AI in Cooking</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="what">
+            <h2>Home</h2>
+            <hr>
+            <figure>
+                <img src="./images/home-cooking.jpg" alt="Cooking scene">
+                <figcaption>Abundant cuisine heals the soul</figcaption>
+            </figure>
+            <p>Welcome to my cooking site, where I share my passion for delicious food!</p>
+            <p>Join me on a culinary journey filled with flavors and creativity.</p>
+        </section>
+        <section id="who">
+            <h2>About Me</h2>
+            <hr>
+            <figure>
+                <img src="./images/about-cooking.jpg" alt="Cooking enthusiast" class="who-img">
+                <figcaption>Outdoor BBQ with my niece</figcaption>
+            </figure>
+            <p>Cooking is not just a hobby; it's a way of expressing myself through flavors and ingredients.</p>
+            <p>I have been eating my whole life. Unlike others, I treat food as a process of enjoyment, so I am not picky eaters and I do not dislike certain foods unless they are disgusting or unappetizing. Over time, as I grew older, I didn't just eat food anymore. I started trying to cook food, which opened the door to a new world for me. It made me realize that cooking is just as beautiful as tasting food.</p>
+        </section>
+        <section id="when">
+            <h2>Best Times</h2>
+            <hr>
+            <p>Discover the best times of year for cooking different types of meals.</p>
+            <div class="season-container">
+                <div class="season-item">
+                    <strong class="season-title">Spring:</strong>
+                    <p>Light and fresh meals to celebrate the season.</p>
+                    <img src="./images/spring-food.jpg" alt="Spring food" class="seasonal-img">
+                    <figcaption>Fresh salads and grilled vegetables.</figcaption>
+                </div>
+                <div class="season-item">
+                    <strong class="season-title">Summer:</strong>
+                    <p>Perfect dishes for outdoor gatherings.</p>
+                    <img src="./images/summer-food.jpg" alt="Summer food" class="seasonal-img">
+                    <figcaption>BBQs and light, refreshing dishes.</figcaption>
+                </div>
+                <div class="season-item">
+                    <strong class="season-title">Fall:</strong>
+                    <p>Warm, comforting meals as the weather cools.</p>
+                    <img src="./images/fall-food.jpg" alt="Fall food" class="seasonal-img">
+                    <figcaption>Hearty soups and roasted root vegetables.</figcaption>
+                </div>
+                <div class="season-item">
+                    <strong class="season-title">Winter:</strong>
+                    <p>Indulgent meals to enjoy on cold days.</p>
+                    <img src="./images/winter-food.jpg" alt="Winter food" class="seasonal-img">
+                    <figcaption>Comfort foods like casseroles and baked goods.</figcaption>
+                </div>
+            </div>
+        </section>
+        
+
+        
+        
+        
+        <section id="where">
+            <h2>Best Locations to Cook</h2>
+            <hr>
+            <p>Explore ideal locations that bring out the best in different cooking styles and flavors.</p>
+            <ul class="location-list">
+                <li>
+                    <strong class="location-title">Backyard BBQ:</strong> Fire up the grill and enjoy cooking outdoors with friends, perfect for steaks, burgers, and veggie skewers.
+                </li>
+                <li>
+                    <strong class="location-title">Beach Picnic:</strong> Plan a seaside feast with cold salads, fresh fruits, and easy-to-eat wraps or seafood for a refreshing, scenic meal.
+                </li>
+                <li>
+                    <strong class="location-title">Mountain Cabin:</strong> Ideal for hearty soups, stews, and roasted dishes, a mountain cabin provides a cozy, rustic backdrop for comfort foods.
+                </li>
+                <li>
+                    <strong class="location-title">Indoor Kitchen:</strong> Your home kitchen is the ultimate space to experiment with new recipes, techniques, and ingredients.
+                </li>
+            </ul>
+        </section>
+        
+        
+        <section id="how">
+            <h2>Cooking Techniques</h2>
+            <hr>
+            <figure>
+                <img src="./images/cooking-techniques.jpg" alt="Cooking techniques">
+                <figcaption>Mastering various cooking methods</figcaption>
+            </figure>
+            <p>Learn essential cooking techniques to enhance your skills.</p>
+            <ul>
+                <li>Chopping and Slicing
+                    <ul>
+                        <li>Knife skills</li>
+                        <li>Different cutting techniques</li>
+                    </ul>
+                </li>
+                <li>Cooking Methods
+                    <ul>
+                        <li>Boiling</li>
+                        <li>Sautéing</li>
+                    </ul>
+                </li>
+                <li>Baking
+                    <ul>
+                        <li>Cakes</li>
+                        <li>Pastries</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="why">
+            <h2>Why Cooking?</h2>
+            <hr>
+            <figure>
+                <img src="./images/cooking-together.jpg" alt="Cooking together">
+                <figcaption>My family and I cooking together</figcaption>
+            </figure>
+            
+            <p><strong>Cooking is more than just a way to prepare food</strong>—it's an art, a science, and a deeply satisfying activity. Here are a few reasons why cooking is such a meaningful pursuit:</p>
+            <ul class="why-cooking-list">
+                <li><strong>Creativity and Expression:</strong> Cooking lets you experiment with flavors, colors, and textures. It’s a way to express your personality, creativity, and even your cultural heritage through the dishes you make.</li>
+                <li><strong>Health and Wellness:</strong> Home-cooked meals allow you to control ingredients and make healthier choices. Cooking is a powerful tool to nourish not just your body, but also your mental well-being.</li>
+                <li><strong>Connection and Sharing:</strong> Cooking is often about sharing—a meal prepared with love brings people together, whether with family, friends, or even strangers. Cooking helps build and strengthen relationships.</li>
+                <li><strong>Learning and Growth:</strong> Cooking is a lifelong learning journey. Whether you're mastering a new technique or exploring a new cuisine, there’s always something new to discover.</li>
+                <li><strong>Satisfaction and Confidence:</strong> Completing a dish from scratch brings a sense of accomplishment. The satisfaction of creating something delicious boosts confidence and brings joy.</li>
+            </ul>
+        </section>
+
+        <section id="ai">
+            <h2>AI Prompts</h2>
+            <hr>
+            <p>Below are the AI prompts I used to generate the content for this page:</p>
+            <ul>
+                <li><strong>for Best Times:</strong> Please tell me what foods are suitable for different seasons</li>
+                <li><strong>for Best Locations to Cook:</strong> Provide some dishes suitable for cooking in different locations.</li>
+                <li><strong>for Cooking Techniques:</strong> Tell me some common cooking techniques</li>
+                <li><strong>for Why Cooking:</strong> Can you help me summarize the key points of this paragraph:"Cooking is not just about preparing food; This is a way to express oneself and showcase creativity. It allows you to choose healthier ingredients for your diet, benefiting both your body and mind. Cooking brings people together, whether they are family or friends, to establish connections through sharing food. This is also a continuous learning experience where you can discover new recipes and improve your skills. Finally, starting a dish from scratch will give you a sense of achievement, boost your confidence, and make cooking a beneficial activity."</li>
+                <li><strong>ask the syntax for style:</strong> How to control project width and spacing, what is the specific syntax, is it "flex: 1 1 calc()"?</li>
+                <li><strong>ask for JavaScript function:</strong> How to use JavaScript that, when a user clicks on a link on a navigation page, only displays the "best position" portion of the page and hides the rest so that the user cannot scroll through it.</li>
+            </ul>
+        </section>
+        
+        
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/QUANFEILI" target="_blank">-GitHub-</a></li>
+                <li>|</li>
+                <li><a href="https://webpages.charlotte.edu/qli18/itis3135/" target="_blank">-ITIS-3135-</a></li>
+                <li>|</li>
+                <li><a href="https://www.linkedin.com/in/quanfei-li" target="_blank">-LinkedIn-</a></li>
+                <li>|</li>
+                <li><a href="https://www.freecodecamp.org/QUANFEI" target="_blank">-freeCodeCamp-</a></li>
+            </ul>
+        </nav>
+        
+        <p><small>Designed by <a href ="../quanfei.co/quanfeiinc.html">Quanfei inc.</a> ©2024</small></p> 
+       
+    </footer>
+
+    <script>
+        function updateSection() {
+            const sectionPath = window.location.hash;
+            
+            document.querySelectorAll("section").forEach((section) => {
+                section.style.display = "none";
+            });
+
+            if (sectionPath === "") {
+                document.getElementById("what").style.display = "block";
+            } else {
+                document.getElementById(sectionPath.slice(1)).style.display = "block";
+            }
+        }
+
+        updateSection();
+
+        window.addEventListener("hashchange", updateSection);
+    </script>
+</body>
+</html>

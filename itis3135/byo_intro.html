@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYO Intro | ITIS 3135</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/survey.js" defer></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>BYO Intro</h2>
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+        
+        <form id="intro-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br>
+
+            <label for="mascot">Mascot:</label>
+            <input type="text" id="mascot" required><br>
+
+            <label for="image-upload">Image (PNG or JPG):</label>
+            <input type="file" id="image-upload" accept=".png, .jpg, .jpeg" required><br>
+
+            <label for="image-caption">Image Caption:</label>
+            <input type="text" id="image-caption" required><br>
+
+            <label for="personal-background">Personal Background:</label>
+            <textarea id="personal-background" required></textarea><br>
+
+            <label for="professional-background">Professional Background:</label>
+            <textarea id="professional-background" required></textarea><br>
+
+            <label for="academic-background">Academic Background:</label>
+            <textarea id="academic-background" required></textarea><br>
+
+            <label for="web-dev-background">Background in Web Development:</label>
+            <textarea id="web-dev-background" required></textarea><br>
+
+            <label for="computer-platform">Primary Computer Platform:</label>
+            <input type="text" id="computer-platform" required><br>
+
+            <label for="courses">Courses Currently Taking:</label>
+            <div id="courses-container">
+                <input type="text" class="course-input">
+                <button type="button" id="add-course-button">Add Course</button>
+            </div><br>
+
+            <label for="funny-thing">Funny thing?</label>
+            <textarea id="funny-thing"></textarea><br>
+
+            <label for="anything-else">Anything else?</label>
+            <textarea id="anything-else"></textarea><br>
+
+            <label>
+                <input type="checkbox" id="agreement" required>
+                I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+            </label><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+
+        <div id="result-container"></div>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

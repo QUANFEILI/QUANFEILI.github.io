@@ -1,0 +1,128 @@
+body {
+    background-color: #4a90e2;
+    color: #333;
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: Lightblue;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+ul {
+    padding-left: 20px; 
+}
+
+li {
+    margin-bottom: 10px; 
+}
+
+nav a {
+    color: Lightblue;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px; 
+    text-align: left;  /* 改为左对齐以便更好地排列表单 */
+    max-width: 1180px; 
+    width: calc(90% - 40px);  /* 考虑新的内边距 */
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #222;
+    color: Lightblue;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+footer nav a {
+    color: Lightblue;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer small {
+    color: #bbb;
+}
+
+@media screen and (min-width: 981px) {
+    main {
+        max-width: 1200px;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    main {
+        max-width: 800px;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Input and button styling for a consistent form look */
+.input-text {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-family: Tahoma, sans-serif;
+}
+
+.button-primary {
+    background-color: #333;
+    color: Lightblue;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Tahoma, sans-serif;
+}
+
+.button-primary:hover {
+    background-color: #555;
+}
+
+/* Form group styling */
+.form-group {
+    margin: 20px 0;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+}
+
+#greetingMessage {
+    color: #333;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* 确保每行内容对齐 */
+label {
+    display: block;  /* 使每个标签单独占一行 */
+    margin-bottom: 5px;  /* 为标签和输入框之间增加间距 */
+}

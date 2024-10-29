@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>First Scripts | ITIS 3135</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/defaultscripts.js" defer></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h1>First Scripts</h1>
+        <h3 id="date-display"></h3>
+        
+        <div class="form-group">
+            <label for="user-name">Enter your name:</label><br>
+            <input type="text" id="user-name" class="input-text">
+        </div>
+        
+        <div class="form-group">
+            <label for="user-mood">How are you feeling?</label><br>
+            <input type="text" id="user-mood" class="input-text">
+        </div>
+        
+        <button id="submit-button" class="button-primary">Submit</button>
+        <div id="greeting-message"></div>
+
+        <div>
+            <label for="favorite-number">Enter your favorite number:</label>
+            <input type="number" id="favorite-number" class="input-text">
+            <button id="check-polygon-button" class="button-primary">Check Polygon</button>
+        </div>
+
+        <div>
+            <button id="animal-mood-check" class="button-primary">Animal Mood Check</button>
+            <button id="animal-facts-trivia" class="button-primary">Animal Facts Trivia</button>
+            <button id="virtual-safari-adventure" class="button-primary">Virtual Safari Adventure</button>
+            <button id="roar-o-meter" class="button-primary">Roar-o-Meter</button>
+            <button id="animal-horoscope" class="button-primary">Animal Horoscope</button>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
